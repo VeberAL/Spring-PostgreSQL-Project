@@ -3,6 +3,7 @@ package com.main.service;
 import com.main.Book;
 import com.main.dao.BookEntity;
 import com.main.dao.BookRepository;
+import com.main.exceptions.BookNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
