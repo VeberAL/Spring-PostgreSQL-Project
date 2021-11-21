@@ -8,6 +8,8 @@ public interface BookService {
     Book getBookById(Long id);
     // получить список всех книг
     List<Book> getAllBooks();
+    List<Book> findByAuthor(String author);
     // добавить книгу
     void addBook(Book book);
+    void editBook(Book book);
 }
