@@ -1,0 +1,35 @@
+Запрос:
+
+http://localhost:8082/books?author=Lovecr - пример поиска
+
+Результат:
+
+ [ {
+  "id" : 1,
+  "author" : "H.P.Lovecraft",
+  "title" : "The Call of Cthulhu",
+  "price" : 100.81
+} ]
+==========================================================
+Запрос:
+
+http://localhost:8082/books?
+
+Результат:
+
+[ {
+  "id" : 1,
+  "author" : "H.P.Lovecraft",
+  "title" : "The Call of Cthulhu",
+  "price" : 100.81
+}, {
+  "id" : 2,
+  "author" : "F.S.Fitzgerald",
+  "title" : " This Side of Paradise",
+  "price" : 90.11
+}, {
+  "id" : 3,
+  "author" : "R.D.Bradbury",
+  "title" : "The Illustrated Man",
+  "price" : 95.54
+} ]
