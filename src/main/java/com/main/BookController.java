@@ -21,8 +21,11 @@ public class BookController {
         return bookService.getBookById(id);
     }
     //Получение списка всех книг
-    @GetMapping //Добавление в метод get
-    public List<Book> getAllBooks() {
+    @GetMapping
+    public List<Book> getAllBooks(@RequestParam(required = false) String author) {
+        if (author != null) //если не передаем в кач-ве параметра автора книги, то показать весь список
+            return bookService.findByAuthor(author);
+
         return bookService.getAllBooks();
     }
     //Добавление книги
